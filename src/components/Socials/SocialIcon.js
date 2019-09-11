@@ -1,8 +1,6 @@
 import React from 'react';
 
-function SocialIcon({Icon,iconClass,name}) {
-    console.log({Icon,iconClass,name})
-   return <Icon className={iconClass} /> 
-}
+const SocialIcon  = ({Icon,iconClass,name}) => <a href=""><Icon className={iconClass} /></a>;
+
 
 export default SocialIcon;

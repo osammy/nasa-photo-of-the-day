@@ -1,28 +1,32 @@
-import { IoLogoFacebook } from "react-icons/io";
+import { FaFacebookF } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoMdMail } from "react-icons/io";
 import { IoIosLink } from "react-icons/io";
 
 export const socials = [
   {
-    name: "facebook",
-    Icon: IoLogoFacebook,
-    iconClass: "icon-class-fb"
+    name: "Facebook",
+    Icon: FaFacebookF,
+    iconClass: "icon-class-fb",
+    bottomContentIconClass:"bt-icon-class"
   },
   {
-    name: "twitter",
+    name: "Twitter",
     Icon: IoLogoTwitter,
-    iconClass: "icon-class-tw"
+    iconClass: "icon-class-tw",
+    bottomContentIconClass:"bt-icon-class"
   },
   {
-    name: "mail",
+    name: "Mail",
     Icon: IoMdMail,
-    iconClass: "icon-class-ml"
+    iconClass: "icon-class-ml",
+    bottomContentIconClass:"bt-icon-class"
   },
   {
-    name: "web",
+    name: "Link",
     Icon: IoIosLink,
-    iconClass: "icon-class-lk"
+    iconClass: "icon-class-lk",
+    bottomContentIconClass:"bt-icon-class"
   }
 ];
 
@@ -44,6 +48,7 @@ Coincidentally, a small meteor was captured in the foreground during imaging  an
 const months = ["January", "February", "March", "April", "May", "June", "July", "Aug", "September", "October", "November", "December"];
 
 export const formatDate = date => {
+            if(!date || date ==="") return date;
             if(typeof date === 'string') date = new Date(date)
             let formattedDate;
   

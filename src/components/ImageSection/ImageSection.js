@@ -1,10 +1,16 @@
 import React from 'react';
 import './imageSection.css';
 import Horses from './horses.jpg';
+import Placeholder from '../../images/placeholder.png'
 
-function ImageSection() {
-    return  <div className="imageSection">
-                <img src={Horses} alt="photo_of_the_day" />
+function ImageSection({url}) {
+    let imgClass ="imageSection"
+    if(url === "") {
+        url = Placeholder;
+    }
+    else  imgClass ="imageSection animated zoomIn"
+    return  <div className={imgClass}>
+                <img src={url} alt="photo_of_the_day" />
             </div>
 }
 

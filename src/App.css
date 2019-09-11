@@ -1,9 +1,8 @@
 
 .App {
   /*text-align: center;*/
-  width:800px;
+  width:1200px;
   margin:0 auto;
-  border:1px solid blue;
 }
 
 .App-logo {
@@ -13,10 +12,13 @@
 }
 
 .App-Content {
-  width:95%;
-  border:1px solid red;
+  width:800px;
   margin:0 auto;
 
+}
+.two-contents {
+  display:flex;
+  justify-content: space-between;
 }
 
 .App-header {

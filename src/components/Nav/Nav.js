@@ -9,11 +9,11 @@ function Nav() {
     <div className="nav-navbar">
       <div><img src={NasaLogo}  alt="nasa_logo"/></div>
       <nav>
-        <a href="#">Subscribe</a>
-        <a href="#"><MdPersonOutline style={{fontSize:"2rem"}} /></a>
-        <a href="#"><MdSearch style={{fontSize:"2rem"}} /></a>
+        <a href="#">SUBSCRIBE</a>
+        <a href="#"><MdPersonOutline style={{fontSize:"1.8rem"}} /></a>
+        <a href="#"><MdSearch style={{fontSize:"1.8rem"}} /></a>
         <a className="menu" href="#">Menu</a>
-        <a href="#"><FaAngleDoubleDown  /></a>
+        <a href="#"><FaAngleDoubleDown style={{fontSize:"1.2rem"}}  /></a>
       </nav>
     </div>
   );
