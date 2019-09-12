@@ -1,11 +1,19 @@
 import React from "react";
 import { socials } from "../../data";
 import SocialIcon from "./SocialIcon";
-import "./socials.css";
+import styled from "styled-components";
+
+// import "./socials.css";
+
+const SocialsSection = styled.div`
+    display:flex;
+    justify-content: space-between;
+    width:170px;
+`
 
 function Socials() {
   return (
-    <div className="icons">
+    <SocialsSection className="icons">
       {socials.map(props => (
         <SocialIcon
           Icon={props.Icon}
@@ -14,7 +22,7 @@ function Socials() {
           key={props.name}
         />
       ))}
-    </div>
+    </SocialsSection>
   );
 }
 

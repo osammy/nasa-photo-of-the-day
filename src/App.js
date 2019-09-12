@@ -7,6 +7,8 @@ import BottomContent from "./components/BottomContent/BottomContent";
 import Advert from  "./images/advertisement.png";
 import { apiData } from "./data";
 import axios from 'axios';
+// const asyncUsers = asyncComponent(()=> {import('../Views/Users/Users')});
+// const asyncComponentApp = asyncComponent(()=>import("../Layouts/Dashboard/DashboardLayout.js"))
 
 
 // const { explanation, media_type, url, hdUrl, date, title, copyright } = apiData;
@@ -50,7 +52,7 @@ function addLoadEvent(url,func) {
 
 
   return (
-    <div className="App-Container">
+    <div className="App-Container animated zoomIn">
       <Nav />
       <div className="App">
         <div className="App-Content">
