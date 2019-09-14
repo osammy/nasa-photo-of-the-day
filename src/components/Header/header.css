@@ -1,0 +1,26 @@
+.header-headerbar  {
+   border-bottom:1px solid #ccc;
+   padding:20px;
+   margin-bottom:30px;
+}
+
+.header-headerbar h1  {
+   font-size:2.5rem;
+   font-weight:bolder;
+   margin: 70px 0;
+}
+
+.header-headerbar p {
+    /*padding: 15px 0;*/
+}
+.header-headerbar .header-category  {
+    text-transform: uppercase;
+}
+.header-headerbar .header-category span {
+    font-weight:bold;
+}
+
+.header-headerbar .header-category .divider {
+    font-size:1.8rem;
+   color:#0066b3;
+}
